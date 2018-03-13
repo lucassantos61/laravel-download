@@ -1,0 +1,12 @@
+#! /usr/bin/env php
+<?php 
+use Symfony\Component\Console\Application;
+use Src\sayHelloCommand;
+
+require_once 'vendor/autoload.php';
+
+$app = new Application('Laracast','1.0');
+
+$app->add(new sayHelloCommand());
+
+$app->run();
