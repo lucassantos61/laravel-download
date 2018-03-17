@@ -2,4 +2,4 @@
 
 - composer install
 
-- ./laravael new <firectory>
+- ./laravael new < directory >
