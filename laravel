@@ -1,0 +1,13 @@
+#! /usr/bin/env php
+<?php 
+use Symfony\Component\Console\Application;
+use Src\NewCommand;
+use GuzzleHttp\Client;
+
+require_once 'vendor/autoload.php';
+
+$app = new Application('Laracast','1.0');
+
+$app->add(new NewCommand(new GuzzleHttp\Client));
+
+$app->run();
